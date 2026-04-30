@@ -1,9 +1,9 @@
 import { BookOpen } from "lucide-react"
 
-const logo = () => {
+const logo = ({className}: {className?: string}) => {
   return (
-    <div className="rounded-3xl bg-primary p-4">
-      <BookOpen className="h-8 w-8 text-white" />
+    <div className={`rounded-md bg-primary flex items-center justify-center ${className}`}>
+      <BookOpen className="text-white size-1/2" />
     </div>
   )
 }

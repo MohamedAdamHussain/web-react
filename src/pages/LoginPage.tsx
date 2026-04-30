@@ -11,14 +11,14 @@ import {
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 
-export function CardDemo() {
+export function LoginPage() {
   return (
     <div className="flex items-center justify-center h-screen">
       <Card className="w-full max-w-sm">
         <CardHeader>
           <div className="py-3">
           <div className="flex justify-center p-3">
-            <Logo/>
+            <Logo className="size-14"/>
           </div>
           <CardTitle className="text-center font-bold text-2xl">تطبيق كتابك</CardTitle>
           </div>

@@ -3,11 +3,15 @@ import { AppSidebar } from "@/components/app-sidebar"
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <SidebarProvider>
+    <SidebarProvider dir="rtl">
       <AppSidebar />
-      <main>
-        <SidebarTrigger />
-        {children}
+      <main className="flex-1 flex flex-col">
+        <div className="flex items-center p-4">
+          <SidebarTrigger className="text-primary/50 hover:text-primary"/>
+        </div>
+        <div className="flex-1">
+          {children}
+        </div>
       </main>
     </SidebarProvider>
   )

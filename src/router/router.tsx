@@ -7,7 +7,5 @@ const router = createBrowserRouter([
   {element: <MainLayout />, children: [
     {path: "/dashboard", element: <DashboardPage />},
   ]},
-],{
-  basename: "/web-react",
-});
+]);
 export default router;
